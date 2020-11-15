@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Increment />
+    <Projects />
   </div>
 </template>
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import Increment from './components/Increment.vue'
+import Projects from './components/listagem/Projects.vue'
 
 export default {
   name: 'App',
   components: {
-    Increment
+    Projects,
+    
   }
 }
 </script>
