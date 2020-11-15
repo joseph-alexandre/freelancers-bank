@@ -11,7 +11,7 @@ def home():
 def listar_projetos():
     projetos = db.session.query(Projeto).all()
     retorno = []
-    for p in usuarios:
+    for p in projetos:
         retorno.append(p.json())
     resposta = jsonify(retorno)
     resposta.headers.add("Access-Control-Allow-Origin", "*")
