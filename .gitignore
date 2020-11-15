@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# History extension vscode
+.history/
+
+# Vscode configuration
+.vscode/
+
+# Front-end
+front-end/node_modules/
