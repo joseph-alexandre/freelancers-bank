@@ -41,7 +41,7 @@
             </router-link>
               <v-list-item>
                 <v-list-item-icon>
-                  <v-icon>md-add</v-icon>
+                  <v-icon>mdi-description</v-icon>
                 </v-list-item-icon>
                 <v-list-item-title>Adicionar Projeto</v-list-item-title>
               </v-list-item>
@@ -64,10 +64,6 @@ export default {
 <style>
     .title-text {
         color: white;
-    }
-
-    .link {
-      text-decoration: none;
     }
     
 

@@ -2,7 +2,9 @@
 <v-app>
   <div id="app">
     <Navegacao />
-    <router-view></router-view>
+    <v-main>
+      <router-view></router-view>
+    </v-main>
   </div>
 </v-app>
 </template>
@@ -16,3 +18,9 @@ export default {
   }
 }
 </script>
+
+<style>
+    .link {
+      text-decoration: none;
+    }
+</style>
