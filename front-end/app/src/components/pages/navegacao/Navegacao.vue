@@ -39,12 +39,6 @@
                 </v-list-item-title>
               </v-list-item>
             </router-link>
-              <v-list-item>
-                <v-list-item-icon>
-                  <v-icon>mdi-description</v-icon>
-                </v-list-item-icon>
-                <v-list-item-title>Adicionar Projeto</v-list-item-title>
-              </v-list-item>
             </v-list-item-group>
           </v-list>
         </v-navigation-drawer>

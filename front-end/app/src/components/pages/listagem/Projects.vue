@@ -1,5 +1,5 @@
 <template>
-  <v-container class="v-container">
+  <v-container class="v-container-true" v-if="projetos.length > 0">
     <v-card
     :loading="loading"
     class="mx-auto my-12"
@@ -43,6 +43,10 @@
     </v-card-actions>
   </v-card>
   </v-container>
+
+  <v-container class="v-container-false" v-else>
+    Não há projetos cadastrados. Cadastre um para que seja listado aqui.
+  </v-container>
 </template>
 
 <script>
@@ -56,22 +60,28 @@ export default {
       }
   },
   mounted() {
-      axios.get("http://localhost:5000/listar_projetos").then(response => (this.projetos = response.data))
+      axios.get("http://localhost:5000/listar_projetos").then(response => {
+        console.log(response)
+        this.projetos = response.data;
+        })
+      .catch((error) => {
+        console.log(error)
+      });
   }
 }
 </script>
 
 <style>
-  .home-text {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   }  
+   .v-container-true {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(80px, auto);
+   }
 
-   .v-container {
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     grid-auto-rows: minmax(50px, auto);
+   .v-container-false {
+      position: fixed;
+      top: 50%;
+      left: 71%;
+      transform: translate(-50%, -50%);
    }
 </style>
