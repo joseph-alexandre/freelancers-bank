@@ -20,6 +20,7 @@ Sistema básico contendo CRUD de projetos e seus desenvolvedores com objetivo so
 * HTML
 * CSS
 * Javascript
+* Axios.
 
 # Demonstração
 A demonstração do sistema desenvolvido até o momento se encontra [aqui](https://github.com/joseph-alexandre/freelancers-bank/tree/main/front-end/demonstração).
